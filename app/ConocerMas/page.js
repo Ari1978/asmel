@@ -1,4 +1,6 @@
 
+'use client';
+
 import Link from 'next/link';
 
 export default function MedicinaLaboral() {
@@ -53,7 +55,7 @@ export default function MedicinaLaboral() {
       <section className="py-12 bg-blue-50">
         <div className="max-w-screen-xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-semibold mb-8">
-            Servicios de Medicina Laboral de Asmel Clinic
+            Servicios de Medicina Laboral de Asmel 
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="space-y-4">
@@ -85,15 +87,15 @@ export default function MedicinaLaboral() {
           <div className="space-y-8">
             <div>
               <p className="text-lg italic mb-4">
-                "Contratar a Asmel Clinic fue una de las mejores decisiones para nuestra empresa. No solo aseguraron que
-                cumpliéramos con todas las regulaciones, sino que también ayudaron a mejorar el ambiente de trabajo."
+                Contratar a Asmel fue una de las mejores decisiones para nuestra empresa. No solo aseguraron que
+                cumpliéramos con todas las regulaciones, sino que también ayudaron a mejorar el ambiente de trabajo.
               </p>
               <p className="font-semibold">Carlos Rodríguez, Gerente General, XYZ Corp.</p>
             </div>
             <div>
               <p className="text-lg italic mb-4">
-                "Gracias a Asmel, nuestros empleados están mucho más saludables. Los exámenes periódicos y el seguimiento
-                constante nos han permitido detectar problemas a tiempo, lo que ha reducido los accidentes laborales."
+                Gracias a Asmel, nuestros empleados están mucho más saludables. Los exámenes periódicos y el seguimiento
+                constante nos han permitido detectar problemas a tiempo, lo que ha reducido los accidentes laborales.
               </p>
               <p className="font-semibold">Ana López, Directora de Recursos Humanos, ABC Ltda.</p>
             </div>
@@ -109,17 +111,16 @@ export default function MedicinaLaboral() {
           empresa a prosperar.
         </p>
         <Link href="/contacto">
-  <span className="inline-block bg-blue-600 text-white text-lg py-3 px-8 rounded-full hover:bg-blue-700 transition">
-    ¡Contáctanos Ahora!
-  </span>
-</Link>
-
+          <span className="inline-block bg-blue-600 text-white text-lg py-3 px-8 rounded-full hover:bg-blue-700 transition">
+            ¡Contáctanos Ahora!
+          </span>
+        </Link>
       </section>
 
       {/* Pie de página */}
       <footer className="bg-gray-200 py-8 text-center">
         <p className="text-sm text-gray-600">
-          © {new Date().getFullYear()} Asmel Clinic. Todos los derechos reservados.
+          © {new Date().getFullYear()} Clinica Asmel. Todos los derechos reservados.
         </p>
       </footer>
 

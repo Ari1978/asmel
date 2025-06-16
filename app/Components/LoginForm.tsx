@@ -9,7 +9,7 @@ export default function LoginForm() {
   const [contrasena, setContrasena] = useState('');
   const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!usuario || !contrasena) {
       setError('Por favor, complete todos los campos.');

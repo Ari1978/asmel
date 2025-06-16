@@ -12,6 +12,7 @@ export default function ServicioCard({ titulo, descripcion, imagen }: ServicioCa
     <div className="flex flex-col md:flex-row bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       {/* Imagen */}
       <div className="w-full md:w-1/2">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src={imagen}
           alt={titulo}
