@@ -24,7 +24,7 @@ export default function Hero() {
           Servicios médicos a medida para cuidar a tu equipo, cumplir con normativas y mejorar el rendimiento.
         </p>
         <Link
-          href="/conocerMas"
+          href="/ConocerMas"
           className="inline-block bg-blue-600 hover:bg-blue-700 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-blue-300 text-white font-semibold px-6 py-3 rounded-md transition"
           aria-label="Conocer más sobre medicina laboral"
         >
