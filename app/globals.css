@@ -1,26 +1,169 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+
+/* Fondo y layout general */
+.Container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #cbd5e1; /* gris claro */
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Card central */
+.card {
+  max-width: 850px;
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 3rem 3.5rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+  border: 1px solid #334155;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 24px 48px rgba(59, 130, 246, 0.7);
 }
 
+/* Título */
+.titulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #60a5fa; /* azul suave */
+  text-align: center;
+  letter-spacing: 1.1px;
+}
+
+/* Texto en el span */
+.parrafo {
+  color: #93c5fd; /* azul claro */
+}
+
+/* Párrafos normales */
+.card p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.4rem;
+  color: #cbd5e1;
+}
+
+/* Párrafo con botón */
+.nosotros-contacto {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #94a3b8;
+}
+
+/* Botón de contacto */
+.contactoButton {
+  background-color: #3b82f6; /* azul vivo */
+  color: white;
+  padding: 0.6rem 1.6rem;
+  margin-left: 0.5rem;
+  border-radius: 8px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background-color 0.25s ease;
+}
+
+.contactoButton:hover,
+.contactoButton:focus {
+  background-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 8px #2563ebaa;
+  cursor: pointer;
+}
+
+/* Formulario */
+/* General */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f4f8;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+}
+
+/* Contenedor principal */
+.contact-main {
+  max-width: 700px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Título */
+.contact-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #1e40af;
+}
+
+/* Párrafo */
+.contact-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Mensajes */
+.contact-success {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.contact-error {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+/* Labels */
+.contact-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+/* Inputs y Textarea */
+.contact-input,
+.contact-textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.contact-input:focus,
+.contact-textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.3);
+  outline: none;
+}
+
+/* Botón */
+.contact-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #1e40af;
 }
