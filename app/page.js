@@ -1,12 +1,13 @@
-"use client"
-
+"use client";
 
 import { useState, useEffect } from "react";
 import Hero from "./Components/Hero";
-import Cuerpo from "./Components/Cuerpo"
-export default function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+import Cuerpo from "./Components/Cuerpo";
 
+export default function Navbar() {
+  const [setMobileMenuOpen] = useState(false);
+
+  // Cerrar el menú cuando el tamaño de la pantalla cambia a mayor a 768px
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth >= 768) {
@@ -19,21 +20,8 @@ export default function Navbar() {
 
   return (
     <section>
-      <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
-        {mobileMenuOpen ? "Cerrar menú" : "Abrir menú"}
-      </button>
-      
-      {mobileMenuOpen && (
-        <nav>
-          {/* Aquí tu menú para móvil */}
-          <ul>
-            <li>Inicio</li>
-            <li>Servicios</li>
-            <li>Contacto</li>
-          </ul>
-        </nav>
-      )}
-
+  
+      {/* Aquí puedes agregar el contenido principal */}
       <Hero />
       <Cuerpo />
     </section>
